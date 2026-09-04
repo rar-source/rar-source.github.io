@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — SpanishPal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FDFAF6;
+    --surface: #F5EFE6;
+    --border: #E8DDD4;
+    --text: #2C1810;
+    --text-muted: #7A6055;
+    --accent: #D46A3A;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header { margin-bottom: 40px; }
+  h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0 0 8px;
+  }
+  .updated {
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  p, li { font-size: 16px; }
+  ul, ol { padding-left: 22px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { font-weight: 700; }
+  .card {
+    background: var(--surface);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-top: 48px;
+  }
+  footer {
+    margin-top: 48px;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>SpanishPal Privacy Policy</h1>
+    <div class="updated">Last updated: September 3, 2026</div>
+  </header>
+
+  <h2>Overview</h2>
+  <p>SpanishPal ("we," "us," "our") is an AI-powered Spanish conversation app. This policy explains what data we collect, how we use it, and your rights.</p>
+
+  <h2>Data We Collect</h2>
+  <p><strong>Voice and conversation data.</strong> When you use SpanishPal, you speak into your microphone. Depending on the feature you use, your voice is processed as follows:</p>
+  <p><strong>Speak tab (live conversation with Elena):</strong> Your voice audio is streamed directly to <strong>OpenAI</strong> via a secure real-time connection. OpenAI handles transcription, response generation, and voice output in one step. Your audio and the resulting conversation text are processed by OpenAI's servers.</p>
+  <p><strong>Lessons and Role Play tabs:</strong></p>
+  <ol>
+    <li>Your voice audio is converted to text by <strong>Deepgram</strong> — a third-party speech-to-text service.</li>
+    <li>The text is sent to <strong>OpenAI</strong> to generate Elena's responses.</li>
+    <li>Elena's responses are converted to voice by <strong>ElevenLabs</strong> — a third-party text-to-speech service.</li>
+  </ol>
+  <p>By using SpanishPal, you consent to your voice and conversation text being processed by these third-party AI services.</p>
+
+  <p><strong>Account data.</strong> SpanishPal uses anonymous device identifiers — no email address or account is required. Anonymous session data is stored in <strong>Supabase</strong>, our backend provider.</p>
+
+  <p><strong>Usage data.</strong> We collect anonymized usage events (screens viewed, features used) via <strong>PostHog</strong> to improve the app. This data is not linked to your identity.</p>
+
+  <p><strong>Purchase data.</strong> Subscription purchases are processed by Apple (App Store). We use <strong>RevenueCat</strong> to track subscription status. We never see your payment card details.</p>
+
+  <h2>Third-Party AI Processing</h2>
+  <p>SpanishPal's core feature — conversation with Elena — is powered by third-party AI services. Specifically:</p>
+  <ul>
+    <li><strong>OpenAI</strong> processes your voice audio and conversation text to generate Elena's responses and voice output. See OpenAI's privacy policy at <a href="https://openai.com/privacy" target="_blank" rel="noopener">openai.com/privacy</a>.</li>
+    <li><strong>Deepgram</strong> processes your voice audio to produce text transcripts (Lessons and Role Play tabs). See Deepgram's privacy policy at <a href="https://deepgram.com/privacy" target="_blank" rel="noopener">deepgram.com/privacy</a>.</li>
+    <li><strong>ElevenLabs</strong> converts Elena's text responses to voice audio (Lessons and Role Play tabs). See ElevenLabs's privacy policy at <a href="https://elevenlabs.io/privacy" target="_blank" rel="noopener">elevenlabs.io/privacy</a>.</li>
+  </ul>
+  <p>Your conversations are processed in real time and are not used to train AI models unless you separately opt in to any such program offered by those providers.</p>
+
+  <h2>Data Retention</h2>
+  <ul>
+    <li>Conversation history is stored to maintain context across sessions and personalize your experience. You can delete your conversation history by deleting the app.</li>
+    <li>To request deletion of all data associated with your device, email: <a href="mailto:support@migdiomedia.com">support@migdiomedia.com</a></li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>SpanishPal is not directed at children under 13. We do not knowingly collect data from children under 13.</p>
+
+  <h2>Your Rights</h2>
+  <p>Depending on your jurisdiction, you may have rights to access, correct, or delete your personal data. Contact: <a href="mailto:support@migdiomedia.com">support@migdiomedia.com</a></p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy. We will notify you of material changes via in-app notice.</p>
+
+  <div class="card">
+    <strong>Contact</strong><br>
+    SpanishPal<br>
+    <a href="mailto:support@migdiomedia.com">support@migdiomedia.com</a>
+  </div>
+
+  <footer>
+    <a href="./terms-of-service.html">Terms of Service</a>
+  </footer>
+</div>
+</body>
+</html>
